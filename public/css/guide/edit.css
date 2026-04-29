@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    background-color: #3575ba;
+    width: 250px;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar .menu a {
+    text-decoration: none;
+    color: inherit; /* Menggunakan warna teks yang diwariskan */
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo-image {
+    width: 180px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Center the image and add some space below */
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #ffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #c2c0c0;
+  }
+  
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .dashboard-title {
+    text-align: center; /* Mengatur teks agar berada di tengah secara horizontal */
+    font-size: 24px; /* Ukuran font */
+    font-weight: 700; /* Ketebalan font */
+    margin: 20px 0; /* Jarak atas dan bawah */
+    color: #333; /* Warna teks */
+}
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative; /* To control position of user-actions */
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between avatar and logout button */
+  }
+  
+  .user-avatar {
+    width: 40px; /* Ukuran ikon profil */
+    height: 40px;
+    border-radius: 50%; /* Membuat ikon menjadi lingkaran */
+  }
+  
+  .logout-btn {
+  background: #285a8f;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+  
+  .btn-logout:hover {
+    background-color: #285a8f; /* Darker shade of sidebar color */
+  }
+
+  .form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center; /* Mengatur teks agar berada di tengah secara horizontal */
+    font-size: 24px; /* Ukuran font */
+    font-weight: 700; /* Ketebalan font */
+    margin-bottom: 20px; /* Jarak bawah */
+    color: #333; /* Warna teks */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px; /* Perbesar ukuran font */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 18px; /* Perbesar ukuran font label */
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+textarea.form-control {
+    height: 150px; /* Perbesar tinggi textarea */
+    resize: none; /* Menghilangkan kemampuan untuk mengubah ukuran */
+    overflow-y: auto; /* Menambahkan scrollbar vertikal jika konten terlalu panjang */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px; /* Perbesar ukuran font tombol */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.img-thumbnail {
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

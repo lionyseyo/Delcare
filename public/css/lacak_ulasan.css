@@ -1,0 +1,236 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+  
+.sidebar {
+    position: fixed; /* Menempelkan sidebar di kiri layar */
+    top: 0;
+    left: 0;
+    background-color: #3575ba;
+    width: 250px;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+  
+  .sidebar .menu a {
+    text-decoration: none;
+    color: inherit; /* Menggunakan warna teks yang diwariskan */
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo-image {
+    width: 180px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Center the image and add some space below */
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #ffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #c2c0c0;
+  }
+  
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 250px; /* Sesuaikan dengan lebar sidebar */
+    min-height: 10vh;
+    text-align: center;
+}
+  
+  
+  .data-table {
+    width: 80%; /* Atur lebar tabel agar tidak memenuhi seluruh layar */
+    margin: 20px auto; /* Pusatkan tabel secara horizontal */
+    border-collapse: collapse;
+    font-size: 14px; /* Sesuaikan ukuran font */
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-title {
+    text-align: center; /* Mengatur teks agar berada di tengah secara horizontal */
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative; /* To control position of user-actions */
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between avatar and logout button */
+  }
+  
+  .user-avatar {
+    width: 40px; /* Ukuran ikon profil */
+    height: 40px;
+    border-radius: 50%; /* Membuat ikon menjadi lingkaran */
+  }
+  
+  .logout-btn {
+  background: #285a8f;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+  
+  .btn-logout:hover {
+    background-color: #285a8f; /* Darker shade of sidebar color */
+  }
+
+
+
+/* Table Styles */
+.table {
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow */
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.table th {
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 12px;
+    border: none;
+    text-align: center;
+}
+
+.table td {
+    padding: 12px;
+    border: none;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+}
+.table td:nth-child(5) {
+    min-width: 150px; /* Lebar minimum kolom Aksi */
+}
+.table tbody tr {
+    background-color: #ffffff; /* Warna putih untuk semua baris */
+}
+
+
+
+.table tbody tr:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+/* Button Styles */
+.btn {
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+}
+.btn-info {
+    min-width: 120px; /* Lebar minimum tombol */
+    white-space: nowrap; /* Mencegah teks turun ke baris berikutnya */
+    text-align: center; /* Teks rata tengah */
+    padding: 8px 16px; /* Tambahkan ruang dalam tombol */
+    font-size: 14px; /* Ukuran font yang nyaman */
+}
+.btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}

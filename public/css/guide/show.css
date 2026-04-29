@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.guide-item {
+    background-color: #fff; /* Warna latar belakang kartu */
+    border: 1px solid #ddd; /* Border kartu */
+    border-radius: 8px; /* Radius sudut kartu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    overflow: hidden; /* Mencegah konten keluar dari kartu */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasi pada hover */
+}
+
+.guide-item:hover {
+    transform: translateY(-5px); /* Efek mengangkat kartu */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bayangan lebih tegas */
+}
+
+.guide-thumbnail {
+    width: 100%;
+    height: 150px; /* Tinggi tetap untuk gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    border-bottom: 1px solid #ddd; /* Garis pemisah bawah gambar */
+}
+
+.guide-info {
+    padding: 16px; /* Ruang dalam kartu */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Jarak antar elemen dalam info */
+}
+
+.guide-info h2 {
+    font-size: 18px; /* Ukuran font judul */
+    font-weight: bold;
+    color: #333; /* Warna teks judul */
+    margin-bottom: 0; /* Hilangkan margin bawah default */
+}
+
+.guide-info p {
+    font-size: 14px; /* Ukuran font deskripsi */
+    color: #666; /* Warna teks deskripsi */
+    line-height: 1.5; /* Spasi antar baris */
+    flex-grow: 1; /* Mengisi ruang yang tersedia */
+}
+
+.btn-primary {
+    align-self: flex-end;
+    background-color: #295F98; /* Warna biru primer */
+    color: #fff; /* Warna teks putih */
+    padding: 8px 12px; /* Ukuran padding tombol */
+    font-size: 14px; /* Ukuran font tombol */
+    border-radius: 4px; /* Radius sudut tombol */
+    text-decoration: none; /* Hilangkan garis bawah */
+    transition: background-color 0.3s; /* Animasi hover */
+}
+
+.btn-primary:hover {
+    background-color: #0e4179; /* Warna biru lebih gelap pada hover */
+}
+
+
+
+/* Tampilan Artikel Lengkap */
+.container {
+    max-width: 800px;
+    margin: 40px auto; /* Tengah halaman dengan jarak atas-bawah */
+    padding: 20px;
+    background-color: #fff; /* Warna latar belakang kontainer */
+    border-radius: 8px; /* Radius sudut kontainer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    font-family: Arial, sans-serif; /* Font yang mudah dibaca */
+}
+
+.container h1 {
+    font-size: 28px; /* Ukuran font judul */
+    color: #333; /* Warna teks judul */
+    margin-bottom: 20px; /* Jarak bawah judul */
+    text-align: center; /* Pusatkan judul */
+}
+
+.container img {
+    max-width: 100%;
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 8px; /* Radius sudut gambar */
+    margin-bottom: 20px; /* Jarak bawah gambar */
+}
+
+.container p {
+    font-size: 16px; /* Ukuran font konten */
+    color: #555; /* Warna teks konten */
+    line-height: 1.8; /* Spasi antar baris teks */
+    margin-bottom: 20px; /* Jarak bawah paragraf */
+    text-align: justify; /* Rata kiri-kanan teks */
+}
+
+.container .btn-secondary {
+    display: inline-block;
+    padding: 10px 15px; /* Ukuran tombol */
+    font-size: 14px;
+    color: #fff; /* Warna teks putih */
+    background-color: #295F98; /* Warna tombol abu-abu */
+    text-decoration: none; /* Hilangkan garis bawah */
+    border-radius: 4px; /* Radius sudut tombol */
+    transition: background-color 0.3s; /* Animasi hover */
+}
+
+.container .btn-secondary:hover {
+    background-color: #0e4179; /* Warna tombol lebih gelap saat hover */
+}
+

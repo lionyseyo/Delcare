@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background-color: #3575ba;
+  width: 250px;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .menu a {
+  text-decoration: none;
+  color: inherit; /* Menggunakan warna teks yang diwariskan */
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-image {
+  width: 180px; /* Adjust the size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* Center the image and add some space below */
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #ffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #c2c0c0;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.dashboard-title {
+  font-size: 36px; /* Increase the size as needed */
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative; /* To control position of user-actions */
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between avatar and logout button */
+}
+
+.user-avatar {
+  width: 40px; /* Ukuran ikon profil */
+  height: 40px;
+  border-radius: 50%; /* Membuat ikon menjadi lingkaran */
+}
+
+.logout-btn {
+background: #285a8f;
+border: none;
+color: #fff;
+padding: 8px 16px;
+border-radius: 15px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.btn-logout:hover {
+  background-color: #285a8f; /* Darker shade of sidebar color */
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  width: 300px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  padding: 20px; /* Adjust the padding as needed */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Add margin to space out the cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  text-align: center; /* Menempatkan teks di tengah secara horizontal */
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.stat-info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.stat-info p {
+  margin: 5px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+}

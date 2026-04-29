@@ -1,0 +1,270 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background-color: #3575ba;
+  width: 250px;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .menu a {
+  text-decoration: none;
+  color: inherit; /* Menggunakan warna teks yang diwariskan */
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-image {
+  width: 180px; /* Adjust the size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* Center the image and add some space below */
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #ffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #c2c0c0;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 50px;
+  min-height: 10vh;
+  text-align: center;
+}
+
+.data-table {
+  width: 80%; /* Atur lebar tabel agar tidak memenuhi seluruh layar */
+  margin: 20px auto; /* Pusatkan tabel secara horizontal */
+  border-collapse: collapse;
+  font-size: 14px; /* Sesuaikan ukuran font */
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+  text-align: center; /* Mengatur teks agar berada di tengah secara horizontal */
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative; /* To control position of user-actions */
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between avatar and logout button */
+}
+
+.user-avatar {
+  width: 40px; /* Ukuran ikon profil */
+  height: 40px;
+  border-radius: 50%; /* Membuat ikon menjadi lingkaran */
+}
+
+.logout-btn {
+background: #285a8f;
+border: none;
+color: #fff;
+padding: 8px 16px;
+border-radius: 15px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.btn-logout:hover {
+  background-color: #285a8f; /* Darker shade of sidebar color */
+}
+
+/* Tabel styling */
+.data-table {
+  width: 100%;
+  margin: 20px auto; /* Center table */
+  border-collapse: collapse;
+  font-size: 14px; /* Adjust font size */
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th:nth-child(1), .data-table td:nth-child(1) {
+  width: 5%; /* Mengatur lebar kolom pertama */
+}
+
+.data-table th:nth-child(2), .data-table td:nth-child(2) {
+  width: 30%; /* Mengatur lebar kolom kedua */
+}
+
+.data-table th:nth-child(3), .data-table td:nth-child(3) {
+  width: 30%; /* Mengatur lebar kolom ketiga */
+}
+
+.data-table th:nth-child(4), .data-table td:nth-child(4) {
+  width: 20%; /* Mengatur lebar kolom keempat */
+}
+
+.data-table th:nth-child(5), .data-table td:nth-child(5) {
+  width: 15%; /* Mengatur lebar kolom kelima */
+}
+
+.data-table thead th {
+  background-color: #007bff;
+  text-align: center;
+  padding: 12px 15px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+.data-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f9fbfd;
+}
+
+.data-table tbody td {
+  padding: 12px 15px;
+}
+
+.btn-view {
+  display: inline-block;
+  background-color: #3575ba;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn-view:hover {
+  background-color: #285a8e;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 5%;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #3575ba;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #f4f7fc;
+}
+
+
+.main-content {
+  padding-top: 0px; 
+  padding-left: 0px; 
+  padding-right: 0px; 
+}
+
+table{
+    margin-top: 20px;
+}
+
+form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+}
+
+form .form-control, form .form-select {
+    margin-bottom: 10px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 600px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #e0e0e0;
+}
+
+.pagination .active {
+    background-color: #ddd;
+    font-weight: bold;
+}

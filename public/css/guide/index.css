@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    background-color: #3575ba;
+    width: 250px;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar .menu a {
+    text-decoration: none;
+    color: inherit; /* Menggunakan warna teks yang diwariskan */
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo-image {
+    width: 180px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Center the image and add some space below */
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #ffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #c2c0c0;
+  }
+  
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .dashboard-title {
+    font-size: 30px; /* Increase the size as needed */
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative; /* To control position of user-actions */
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between avatar and logout button */
+  }
+  
+  .user-avatar {
+    width: 40px; /* Ukuran ikon profil */
+    height: 40px;
+    border-radius: 50%; /* Membuat ikon menjadi lingkaran */
+  }
+  
+  .logout-btn {
+  background: #285a8f;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+  
+  .btn-logout:hover {
+    background-color: #285a8f; /* Darker shade of sidebar color */
+  }
+  
+
+/* Tampilan modern untuk dashboard panduan */
+.dashboard {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+}
+
+.dashboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.add-guide {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.add-guide .btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.add-guide .btn:hover {
+    background-color: #218838;
+}
+
+.guide-table {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.guide-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.guide-table th, .guide-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.guide-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.guide-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.guide-table td {
+    vertical-align: middle;
+}
+
+.btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+        cursor: pointer;
+    display: inline-block;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}

@@ -1,0 +1,88 @@
+.footer {
+    background-color: #295F98;
+    color: #ffffff;
+    padding: 40px 0;
+    font-size: 14px;
+    margin-top: 200px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+    color: #fff;
+}
+
+.footer-section h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer-section p strong {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer-bottom {
+    background-color: #295F98;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+}
+
+/* Company Info Styling */
+.company-info {
+    text-align: left;
+    position: relative; /* Add relative positioning */
+  }
+
+  .company-logo {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    position: relative ; /* Position the logo absolutely */
+    left: -100px; /* Center the logo horizontally */
+    top: 50%; /* Center the logo vertically */
+    transform: translateY(5%); /* Adjust for vertical centering */
+    margin-right: -50px; /* Add space between the logo and the text */
+}
+
+.company-info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.company-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.company-logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+/* Contact Center and Operational Hours Styling */
+.contact-center p,
+.operational-hours p {
+    margin: 8px 0;
+}
+
+.operational-hours p {
+    font-size: 16px;
+}

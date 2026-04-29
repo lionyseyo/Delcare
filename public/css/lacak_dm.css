@@ -1,0 +1,289 @@
+/* Table Styling */
+.title-text {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    font-weight: 700; /* Mengatur ketebalan font */
+    font-size: 36px; /* Mengatur ukuran font */
+    color: #333; /* Mengatur warna teks */
+}
+table {
+    font-family: 'Poppins', sans-serif;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 80%; /* Sesuaikan lebar tabel */
+    margin: 20px auto; /* Pusatkan tabel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    border-radius: 8px; /* Tambahkan border radius */
+    overflow: hidden; /* Pastikan radius tidak terpotong */
+    background: #fff;
+}
+
+th, td {
+    padding: 12px 15px; /* Ruang lebih nyaman */
+    text-align: left;
+}
+
+th {
+    background-color: #295F98; /* Warna header tabel */
+    color: #080808;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+td {
+    font-size: 14px;
+    color: #555;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Warna baris genap */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Warna saat hover */
+}
+
+    .status-container {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .status-ditunda {
+      background-color: #ffc107;
+      color: #fff;
+    }
+    
+    .status-sukses {
+      background-color: #4caf50;
+      color: #fff;
+    }
+    
+    .status-diterima {
+      background-color: #00bcd4;
+      color: #fff;
+    }
+    
+    .status-ditolak {
+      background-color: #f44336;
+      color: #fff;
+    }
+    
+  
+  body {
+      font-size: 1rem;
+      overflow-x: hidden;
+  }
+  
+  
+  
+  /* MAIN CONTENT */
+  .status-header {
+      margin-top: 90px; /* Jarak dari navbar untuk memastikan tidak tertutup */
+      font-size: 20px; /* Ukuran teks lebih besar sedikit */
+      font-weight: bold; /* Teks lebih tebal */
+      text-align: center; /* Posisikan teks di tengah */
+      margin-right: 580px;
+  }
+  
+  .status-header-kecil {
+      font-size: 13px; /* Ukuran teks lebih besar sedikit */
+      text-align: center; /* Posisikan teks di tengah */
+      margin-right: 1550px;
+  }
+  
+  
+  
+  main {
+      padding-top: 120px; 
+  }
+  
+  .main-content {
+      padding-top: 100px; 
+  }
+  
+  table{
+      margin-top: 20px;
+  }
+  
+  
+  form label {
+      font-weight: bold;
+  }
+  
+  form .form-control, form .form-select {
+      margin-bottom: 10px;
+  }
+
+  /* Pagination Styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    list-style: none;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #295F98;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #295F98;
+    color: #fff;
+    border-color: #295F98;
+}
+
+.pagination .active {
+    background-color: #6cb4f2;
+    color: #fff;
+    border-color: #6cb4f2;
+    font-weight: bold;
+}
+  
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.header {
+    background: linear-gradient(to right, #295F98, #6cb4f2);
+    padding: 15px 10%;
+    color: #fff;
+    position: relative;
+    height: 40vh; /* Extend header to cover half the viewport height */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 25px; /* Adjust the radius as needed */
+    border-bottom-right-radius: 25px; /* Adjust the radius as needed */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.logo img {
+    height: 700px; /* Ubah nilai ini sesuai dengan ukuran yang diinginkan */
+    width: auto; /* Menjaga aspek rasio gambar */
+}
+
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav .active {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.title-section {
+    text-align: center;
+    font-weight: bold; /* Optional: to make the text bold */
+    margin-top: 100px; /* Adjust this value as needed */
+  }
+
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    font-size: 28px; /* Adjust the size as needed */
+  }
+  
+
+.login-btn, .logout-btn {
+    border: 10px solid #fff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background: none;
+}
+
+.logout-btn {
+    background: #ff6600;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-icon {
+    
+    color: #fff; /* Initial color */
+    cursor: pointer;
+    transition: color 0.3s; /* Smooth transition for color change */
+    line-height: 1; /* Ensure the icon is not constrained by line height */
+  }
+  
+  
+  .profile-icon:active {
+    color: #295F98; /* Change to desired color when clicked */
+  }
+
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Tambahkan jarak antara elemen */
+}
+
+.user-name {
+    font-size: 16px;
+    color: #fff; /* Sesuaikan warna teks */
+    margin-left: 10px; /* Tambahkan jarak kiri untuk nama pengguna */
+}
