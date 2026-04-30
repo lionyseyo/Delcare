@@ -28,7 +28,7 @@
                         </ul>
                     </div>
                 @endif
-                <form action="" method="POST">
+               <form action="{{ url('/login') }}" method="POST">
                     @csrf
                     <div class="input-group">
                         <input type="email" id="email" name="email" placeholder="Email" required>

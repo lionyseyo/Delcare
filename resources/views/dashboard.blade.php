@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
-  <link rel="stylesheet" href="css/dashboard.css">
-  <link rel="stylesheet" href="js/dashboard.js">
+  
+  <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
+  
+  <script src="{{ asset('js/dashboard.js') }}"></script>
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <div class="container">
-    <!-- Sidebar -->
+    
     <aside class="sidebar">
       <div class="logo">
         <img src="{{ asset('img/logo.png') }}" alt="Logo" class="logo-image">
@@ -45,11 +47,10 @@
       </ul>
     </aside>
 
-    <!-- Main Content -->
     <main class="main-content">
       <header class="header">
         <div class="user-actions">
-          <img src="img/profile.png" alt="User Avatar" class="user-avatar">
+          <img src="{{ asset('img/profile.png') }}" alt="User Avatar" class="user-avatar">
           <form action="{{ route('logout') }}" method="POST">
             @csrf
             <button type="submit" class="logout-btn">Keluar</button>
@@ -60,31 +61,31 @@
       <div class="dashboard">
         <h2 class="dashboard-title">Dashboard</h2>
         
-
         <div class="stats">
-          <!-- Total Laporan Masuk -->
           <div class="stat-card">
             <div class="stat-info">
               <h3>Total Laporan Masuk</h3>
-              <p class="stat-number">{{ $totalReports }}</p> <!-- Data dari controller -->
+              <p class="stat-number">{{ $totalReports }}</p>
             </div>
           </div>
 
-           <!-- Total Laporan Diterima -->
-  <div class="stat-card">
-    <div class="stat-info">
-      <h3>Total Laporan Diterima</h3>
-      <p class="stat-number">{{ $acceptedReports }}</p> <!-- Data dari controller -->
-    </div>
+          <div class="stat-card">
+            <div class="stat-info">
+              <h3>Total Laporan Diterima</h3>
+              <p class="stat-number">{{ $acceptedReports }}</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-info">
+              <h3>Total Laporan Ditolak</h3>
+              <p class="stat-number">{{ $rejectedReports }}</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
   </div>
-
-  
-  <div class="stat-card">
-    <div class="stat-info">
-      <h3>Total Laporan Ditolak</h3>
-      <p class="stat-number">{{ $rejectedReports }}</p> <!-- Data dari controller -->
-    </div>
-  </div>
-</div
-
-
+</body>
+</html>
